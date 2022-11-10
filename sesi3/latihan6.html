@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box-satu {
+            flex: 2;
+            background-color: palegoldenrod;
+            height: 500px;
+            padding: 16px;
+        }
+
+        .box-dua {
+            flex: 1;
+            background-color: paleturquoise;
+            height: 500px;
+            padding: 16px;
+        }
+
+        .box-tiga {
+            flex: 1;
+            background-color: palegreen;
+            height: 500px;
+            padding: 16px;
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .box-satu {
+                flex: 1;
+            }
+
+            .box-satu,
+            .box-dua,
+            .box-tiga {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-satu">
+            Breakpoints are the building blocks of responsive design. Use them to control when your layout can be
+            adapted at a particular viewport or device size.
+
+            Use media queries to architect your CSS by breakpoint. Media queries are a feature of CSS that allow you to
+            conditionally apply styles based on a set of browser and operating system parameters. We most commonly use
+            min-width in our media queries.
+
+            Mobile first, responsive design is the goal. Bootstrap’s CSS aims to apply the bare minimum of styles to
+            make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger
+            devices. This optimizes your CSS, improves rendering time, and provides a great experience for your
+            visitors.
+        </div>
+        <div class="box-dua">
+            Breakpoints are the building blocks of responsive design. Use them to control when your
+            layout can be adapted at a particular viewport or device size.
+
+            Use media queries to architect your CSS by breakpoint. Media queries are a feature of CSS that allow you to
+            conditionally apply styles based on a set of browser and operating system parameters. We most commonly use
+            min-width in our media queries.
+
+            Mobile first, responsive design is the goal. Bootstrap’s CSS aims to apply the bare minimum of styles to
+            make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger
+            devices. This optimizes your CSS, improves rendering time, and provides a great experience for your
+            visitors.
+        </div>
+        <div class="box-tiga">
+            Breakpoints are the building blocks of responsive design. Use them to control when your
+            layout can be adapted at a particular viewport or device size.
+
+            Use media queries to architect your CSS by breakpoint. Media queries are a feature of CSS that allow you to
+            conditionally apply styles based on a set of browser and operating system parameters. We most commonly use
+            min-width in our media queries.
+
+            Mobile first, responsive design is the goal. Bootstrap’s CSS aims to apply the bare minimum of styles to
+            make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger
+            devices. This optimizes your CSS, improves rendering time, and provides a great experience for your
+            visitors.
+        </div>
+    </div>
+</body>
+
+</html>

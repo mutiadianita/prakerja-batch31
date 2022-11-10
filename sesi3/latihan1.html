@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        /*Internal style*/
+        h1 {
+            color:green;
+        }
+        h2 {
+            color: red;
+            background-color: khaki;
+        }
+        #judul-dua {
+            background-color: pink;
+        }
+        .text-orange {
+            color: orange;
+        }
+        .background-brown {
+            background-color: brown;
+        }
+        .artikel h1 {
+            color: violet;
+            background-color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <!--Inline style-->
+    <h1 style="color:#203354; background-color: pink;">Judul</h1>
+    <h1 style="color:#203354; background-color: pink;">Judul</h1>
+
+    <!--Internal style-->
+    <h2 id="judul-dua">Judul 2</h2>
+    <h2 class="text-orange">Judul 3</h2>
+
+    <!--External style-->
+    <h3>Judul 2</h3>
+    <h3 class="text-orange background-brown">Judul 3</h3>
+
+    <div class="artikel">
+        <h1>Artikel</h1>
+    </div>
+    <h1>Bukan Artikel</h1>
+</body>
+</html>
